@@ -2,6 +2,13 @@
   "name": "@yonngrui/hello-btn",
   "private": false,
   "version": "0.0.1",
+  "description": "easy button library",
+  "author": "yongrui",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "button"
+  ],
   "type": "module",
   "files": [
     "dist"
