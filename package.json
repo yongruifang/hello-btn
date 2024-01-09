@@ -9,6 +9,10 @@
     "vue",
     "button"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yongruifang/hello-btn"
+  },
   "type": "module",
   "files": [
     "dist"
