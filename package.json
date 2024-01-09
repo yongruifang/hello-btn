@@ -1,9 +1,11 @@
 {
   "name": "@yonngrui/hello-btn",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/hello-btn.umd.cjs",
   "module": "./dist/hello-btn.js",
   "exports": {
