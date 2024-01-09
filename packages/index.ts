@@ -1,3 +1,3 @@
-import PrimaryButton from './components/PrimaryButton.vue'
+import PrimaryButton from '@p/components/PrimaryButton.vue'
 
 export { PrimaryButton }
