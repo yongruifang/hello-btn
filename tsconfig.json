@@ -8,10 +8,12 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "outDir": "dist",
+    "emitDeclarationOnly": true, // 只输出声明文件(ts 产物)
+    "declaration": true, // 自动生成声明文件
+    "declarationDir": "dist", // 声明文件生成的目录
     "jsx": "preserve",
 
     /* Linting */
@@ -20,6 +22,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["packages/**/*.ts", "packages/**/*.tsx", "packages/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

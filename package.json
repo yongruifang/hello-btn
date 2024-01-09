@@ -1,17 +1,29 @@
 {
-  "name": "hello-btn",
-  "private": true,
+  "name": "@yonngrui/hello-btn",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "files": ["dist"],
+  "main": "./dist/hello-btn.umd.cjs",
+  "module": "./dist/hello-btn.js",
+  "exports": {
+    ".": {
+      "import": "./dist/hello-btn.js",
+      "require": "./dist/hello-btn.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vite build && vue-tsc",
     "preview": "vite preview"
   },
   "dependencies": {
     "vue": "^3.3.11"
   },
   "devDependencies": {
+    "@types/node": "^20.10.7",
     "@vitejs/plugin-vue": "^4.5.2",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
