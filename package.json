@@ -8,12 +8,12 @@
   "module": "./dist/hello-btn.js",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/hello-btn.js",
       "require": "./dist/hello-btn.umd.cjs"
     },
     "./style.css": "./dist/style.css"
   },
-  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build && vue-tsc",
